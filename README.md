@@ -17,3 +17,6 @@ The calculator upon invocation, will take the parameters as arguments and run th
 function add(uint x, uint y) public pure returns(uint) { .. }
 
 Since the data is not being stored onchain, to change the state, there is no gas cost. The function called is a "pure returns" type.
+
+Updated(7/16/24):
+Added an interface to the contract for function abstraction.

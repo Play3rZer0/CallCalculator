@@ -1,8 +1,10 @@
 //SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.26;
+import "./CalculatorInterface.sol";
 
-contract Calculator {
+pragma solidity ^0.8.20;
+
+contract Calculator is CalculatorInterface {
     function add(uint x, uint y) public pure returns (uint) {
         return x + y;
     }

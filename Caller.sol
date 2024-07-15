@@ -2,13 +2,13 @@
 
 pragma solidity ^0.8.26;
 
-import "./Calculator.sol";
+import "./CalculatorInterface.sol";
 
 contract Caller {
-    Calculator calculator;
+    CalculatorInterface public calculator;
 
     constructor(address calculatorAddress) {
-        calculator = Calculator(calculatorAddress);
+        calculator = CalculatorInterface(calculatorAddress);
     }
 
     function getSumValue(uint x, uint y) public view returns (uint) {
